@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A7257141FC6F5750093E2B2 /* MasterfeedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7257131FC6F5750093E2B2 /* MasterfeedLayout.swift */; };
+		4A7257161FC6F5850093E2B2 /* MasterfeedLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7257151FC6F5850093E2B2 /* MasterfeedLayoutAttributes.swift */; };
 		4AB583C01FC071E100514B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB583BF1FC071E100514B27 /* AppDelegate.swift */; };
 		4AB583C21FC071E100514B27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB583C11FC071E100514B27 /* ViewController.swift */; };
 		4AB583C51FC071E100514B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB583C31FC071E100514B27 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A7257131FC6F5750093E2B2 /* MasterfeedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterfeedLayout.swift; sourceTree = "<group>"; };
+		4A7257151FC6F5850093E2B2 /* MasterfeedLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterfeedLayoutAttributes.swift; sourceTree = "<group>"; };
 		4AB583BC1FC071E100514B27 /* MasterfeedWaterfall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterfeedWaterfall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB583BF1FC071E100514B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AB583C11FC071E100514B27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				4AB583D21FC0727700514B27 /* MasterfeedWaterfallFlowLayout.swift */,
+				4A7257131FC6F5750093E2B2 /* MasterfeedLayout.swift */,
+				4A7257151FC6F5850093E2B2 /* MasterfeedLayoutAttributes.swift */,
 			);
 			name = Pod;
 			path = ../Pod;
@@ -149,8 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB583C21FC071E100514B27 /* ViewController.swift in Sources */,
+				4A7257161FC6F5850093E2B2 /* MasterfeedLayoutAttributes.swift in Sources */,
 				4AB583D31FC0727700514B27 /* MasterfeedWaterfallFlowLayout.swift in Sources */,
 				4AB583C01FC071E100514B27 /* AppDelegate.swift in Sources */,
+				4A7257141FC6F5750093E2B2 /* MasterfeedLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
