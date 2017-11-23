@@ -8,10 +8,10 @@
 
 import UIKit
 
-class MasterfeedLayout : UICollectionViewFlowLayout {
+class MasterfeedFlowLayout : UICollectionViewFlowLayout {
     
     override class var layoutAttributesClass: AnyClass {
-        return MasterfeedLayoutAttributes.self
+        return MasterfeedFlowLayoutAttributes.self
     }
     
     var delegate: MasterfeedLayoutDelegate!
@@ -23,7 +23,7 @@ class MasterfeedLayout : UICollectionViewFlowLayout {
         return CGSize(width: contentWidth, height: contentHeight)
     }
     
-    internal var cache = [MasterfeedLayoutAttributes]()
+    internal var cache = [MasterfeedFlowLayoutAttributes]()
     internal var contentHeight: CGFloat  = 0 { didSet {
         contentHeightDidChange()
         }
@@ -105,22 +105,4 @@ class MasterfeedLayout : UICollectionViewFlowLayout {
     }
 }
 
-class MasterfeedLayoutAttributes: UICollectionViewLayoutAttributes {
-    
-    var photoHeight: CGFloat = 0.0
-    
-    override func copy(with zone: NSZone? = nil) -> Any {
-        let copy = super.copy(with: zone) as! MasterfeedLayoutAttributes
-        copy.photoHeight = photoHeight
-        return copy
-    }
-    
-    override func isEqual(_ object: Any?) -> Bool {
-        if  let attributes = object as? MasterfeedLayoutAttributes {
-            if( attributes.photoHeight == photoHeight  ) {
-                return super.isEqual(object)
-            }
-        }
-        return false
-    }
-}
+
